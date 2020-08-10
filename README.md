@@ -7,11 +7,12 @@
 
 ## 스터디원
 - [김은아](https://github.com/euna789)
-- [안민경]()
+- [안민경](https://github.com/Kyoungminn)
 - [안샛별](https://github.com/sbyeol3)
 
 ## 스터디 내용
 
 > 출석 O, 결석 X
+
 주차 | 태그 | 은아 | 민경 | 샛별
 --- | --- | --- | --- | ---
