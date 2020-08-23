@@ -22,7 +22,7 @@ div 속성
     <div style="float:inline-end;width:100; height:150; background-color:gray";>div 2-3</div>
 </div>
 ```
-<img src="./imgs/div.png" width="300"/>
+<img src="./imgs/div.PNG" width="400"/>
 
 ### 2. section
 
@@ -39,3 +39,4 @@ div는 의미없이 단순히 내용을 묶어주는 역할을 한다면 section
     <p>운동하고 밥먹기</p>
 </section>
 ```
+<img src="./imgs/section.PNG" width="400"/>
