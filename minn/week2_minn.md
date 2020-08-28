@@ -4,7 +4,6 @@
 * 문서를 링크 시키기 위해 사용하는 태그
 
 ## \<a>태그의 속성 사용법
----
 
 **href** : 연결할 주소를 지정한다.
 
@@ -49,9 +48,9 @@
 * 스타일을 적용시키기 위한 영역을 지정할 때 사용
 
 ## \<span> 태그의 기본 속성
----
+
 * display : 디스플레이 요소 변경 (default: inline)
-* width, height : 가로, 세로 크기 지정
+* width, height : 가로, 세로 크기 지정 (dispaly를 block으로 바꿔야함)
 * background-color : 배경색 지정
 * color : 글자색 지정
 * font-style : 글자 폰트 지정
@@ -70,6 +69,17 @@
 ```javascript
 <p>first paragraph</p>
 ```
+
+## \<p> \<div> \<span> 차이점
+
+* display 요소는 Block, Inline 두개로 나뉨
+1. Block-level 
+태그 스스로가 가지고 있는 고유 공간이 있다. 그래서 가로, 세로 사이즈 조절이 가능하다.
+ex) \<div>, \<p>, \<footer>, \<main> 등  
+
+2. Inline-level
+스스로 가지고 있는 공간이 없이 내용에 따라서 공간이 정해진다. 그래샤 가로, 세로 사이즈 조절이 불가능하다. 
+ex) \<span>, \<script>, \<var> 등
 
 
 
