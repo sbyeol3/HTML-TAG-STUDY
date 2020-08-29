@@ -20,10 +20,10 @@ a 속성은 세가지가 있다.
 
 <a href="www.youtube.com" title="유튜브로 이동">유튜브</a>
 ```
-<img src="./imgs/a.png" width="400"/>
+<img src="./imgs/a.png" width="250"/>
 
 ```html
 <a href="javascript:alert('자바스크립트 alert호출')">alert</a>
 ```
-<img src=".imgs/a2.png" width="400"/>
+<img src="./imgs/a2.png" width="400"/>
 
