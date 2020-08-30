@@ -15,10 +15,10 @@ a 속성은 세가지가 있다.
 ```html
 <a href="https://github.com/Euna789/HTML-TAG-STUDY/tree/master/euna">html 태그 스터디 github</a>
 
-<a href="www.naver.com" target="_blank">네이버</a> //새창에서 열기
-<a href="www.google.com" target="_self">구글</a> //현재창에서 열기
+<a href="https://www.naver.com" target="_blank">네이버</a> //새창에서 열기
+<a href="https://www.google.com" target="_self">구글</a> //현재창에서 열기
 
-<a href="www.youtube.com" title="유튜브로 이동">유튜브</a>
+<a href="https://www.youtube.com" title="유튜브로 이동">유튜브</a>
 ```
 <img src="./imgs/a.png" width="250"/>
 
@@ -69,7 +69,8 @@ span과 div의 차이
 <span style="background-color: #36ffff;">span2</span>
 <span style="background-color: #36ffff;">span3</span>
 ```
-<img src="./imgs/span2.png" width=350"/>
+<img src="./imgs/span2.png" width="300" />
+
 
 span은 줄바꿈이 없어 문장 사이에서 강조할 때 사용하기 좋다.
 ```html
@@ -78,7 +79,7 @@ span은 줄바꿈이 없어 문장 사이에서 강조할 때 사용하기 좋�
     만약 박물관에서 저 빗자루를 사려고 한다면 말이야.<br />
 </div>
 ```
-<img src="./imgs/span3.png" width="700" />
+<img src="./imgs/span3.png" width="400" />
 
 ### 3. p 태그
 
@@ -91,8 +92,8 @@ p태그에서 가장 많이 사용하는 속성은 align, 정렬임
  <p align = "center">무궁화 삼천리 화려강산</p> 
  <p align = "justify">대한사람 대한으로 길이 보전하세</p>
 ```
-<img src="./imgs/p.png" width="400"/>
-
+<img src="./imgs/p.png" width="400"/>  
+  
 \</p>다음은 무조건 한 줄이 비어있음
 ```html
 <p style="background-color: #00ff66">
@@ -109,8 +110,9 @@ p태그에서 가장 많이 사용하는 속성은 align, 정렬임
     div2: 하지만 그것은 뻔한 거짓말이었다.
 </div>
 ```
-<img src="./imgs/p2.png" width="400"/>
+<img src="./imgs/p2.png" width="400"/>  
 
+* * *
 참조
 - https://electronic-moongchi.tistory.com/87
 - https://mainia.tistory.com/3289
