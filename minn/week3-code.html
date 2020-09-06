@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            table { 
+                    border: 2px solid green;
+                    border-collapse: collapse;
+                    width: 350;
+                    height: 200;
+                    }
+
+            th,td { 
+                    border: 2px solid green;
+                    padding: 10px;
+                    text-align: center;
+                    }
+
+            thead {background-color: #399462;}
+            
+        </style>
+        <h1>table 연습하기</h1>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>학과</th>
+                    <th>전공</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">소프트웨어학부</td>
+                    <td>컴퓨터공학전공</td>
+                </tr>
+                <tr>
+                    <td>사이버보안전공</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">차세대기술공학부</td>
+                    <td>화학·전자전기공학전공</td>
+                </tr>
+                <tr>
+                    <td>식품공학전공</td>
+                </tr>
+                <tr>
+                    <td>화학신소재공학전공</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
