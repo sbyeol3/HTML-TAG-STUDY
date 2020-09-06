@@ -37,10 +37,7 @@
 ### table 속성
 - colsapn
 - rowspan
-- border
-- bgcolor
-- height
-- valign  
+- 이외에도 border, bgcolor, height, valign 등의 속성이 있지만 css style로 적용하는 것이 좋다.
 
 ① colspan
 ```html
@@ -60,7 +57,24 @@
 ```
 <img src="./imgs/table2.png" width="200"/>
 
+② rowspan
+```html
+<table>
+    <tr>
+        <th rowspan="3">이화 유치원</th>
+        <td> 사마귀반 </td>                
+    </tr>
+    <tr>
+        <td> 개나리반 </td>
+    </tr>
+    <tr>
+        <td> 코끼리반 </td>
+    </tr>
+</table>
+```
+
 
 * * *
 참조
 - https://aboooks.tistory.com/59
+- https://www.codingfactory.net/10510
