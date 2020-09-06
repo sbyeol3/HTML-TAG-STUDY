@@ -74,7 +74,7 @@ colspan | *number* | 병합할 행의 개수
 headers | *header_id* | 하나 이상의 관련된 헤더
 rowspan | *number* | 병합할 열의 개수
 
-## optional 태그
+## optional 태그 (semantic)
 
 ### `<caption>`
 
@@ -99,7 +99,17 @@ span | number | colgroup이 차지할 열의 수를 나타내는 양의 정수
 
 ### `<thead>`
 
+헤더 콘텐츠를 하나의 그룹으로 묶을 때 사용하는 태그로, 테이블의 각 영역(header, body, footer)을 명시하기 위해 `<tbody>, <tfoot>` 요소와 함께 사용된다.
 
+반드시 모든 `<caption>, <colgroup>` 요소 다음에 위치해야 하고 반드시 하나 이상의 `<tr>` 요소를 포함하고 있어야 한다.
+
+### `<tbody>`
+
+하나 이상의 `<tr>` 요소를 포함하고 있어야 하고, 여러 번 선언되어 행을 그룹화할 수 있다.
+
+### `<tfoot>`
+
+열의 요약으로 구성된 집합, `<table>` 내에 한번만 사용할 수 있다.
 
 ### 브라우저 지원
 
@@ -111,3 +121,4 @@ span | number | colgroup이 차지할 열의 수를 나타내는 양의 정수
 
 - https://www.w3schools.com/tags/tag_table.asp
 - https://developer.mozilla.org/ko/docs/Web/HTML/Element/table
+- http://webberstudy.com/html-css/html-2/table-symactic/
