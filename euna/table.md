@@ -72,7 +72,7 @@
     </tr>
 </table>
 ```
-
+<img src="./imgs/table3.png" width="200"/>
 
 * * *
 참조
