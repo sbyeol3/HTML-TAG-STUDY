@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            table {
+                padding: 20px 50px;
+                margin: 100px;
+                border: solid 1px rgba(0, 0, 0, 0.2);
+                border-spacing: 5px;
+            }
+            caption {
+                caption-side: bottom;
+                margin: 10px 0;
+            }
+            td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>카페 메뉴판</caption>
+            <colgroup>
+                <col/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>menu</th>
+                    <th>hot</th>
+                    <th>iced</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>에스프레소</td>
+                    <td colspan="2">3,000</td>
+                </tr>
+                <tr>
+                    <td>아메리카노</td>
+                    <td>3,500</td>
+                    <td>4,000</td>
+                </tr>
+                <tr>
+                    <td>카페라떼</td>
+                    <td>4,000</td>
+                    <td>4,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">사이즈업 +1000</td>
+                </tr> 
+            </tfoot>
+        </table>
+    </body>
+</html>
