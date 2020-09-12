@@ -18,5 +18,6 @@
 --- | --- | --- | --- | ---
 1 | `<div> <section>` | O | O | O 
 2 | ```<a> <span> <p>``` | O | O | O
-3 | ```<table> <tr> <td> <th> ...``` |
+3 | ```<table> <tr> <td> <th> ...``` | O | O | O
+4 | ```<meta> <button>``` | 
 
