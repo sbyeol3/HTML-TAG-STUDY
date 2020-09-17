@@ -65,7 +65,7 @@ form에 입력한 모든 데이터를 초기화한다.
 Reset:
 <input type="reset">
 ```
-<img src="./imgs/input6.png" width="300"> --> reset 후 <img src="./imgs/input7.png" width="300"/>
+<img src="./imgs/input6.PNG" width="300"> --> reset 후 <img src="./imgs/input7.PNG" width="300"/>
   
 - radio type
 여러 항목 중 단일선택
@@ -90,6 +90,91 @@ Radio:
 ```
 <img src="./imgs/input9.png" width="300">
 
+  
+- file type
+파일 업로드를 컨트롤함  
+method="post"일 때만 가능  
+enctype: form데이터를 서버로 제출할 때 데이터가 인코딩 된 방법을 명시
+"multipart/form-data": 모든 문자를 인코딩하지 않음
+
+```html
+<form action="formInputLabel.html" method="post" enctype="multipart/form-data">
+      <input type="file" name="selected-file">
+      <input type="submit">
+</form>
+```
+<img src="./imgs/input10.png" width="300">  <img src="./imgs/input11.png" width="300"> <img src="./imgs/input12.png" width="300">
+
+- hidden type
+눈에 보이지 않는 정보를 서버쪽으로 보낼 때 사용
+
+```html
+<input type="hidden" name="hide" value="숨겨진 내용">
+```
+  
+* * *
+② textarea  
+여러 줄의 텍스트 입력
+cols, rows로 입력 글자 수 설정 가능
+
+```html
+<form>
+      <p> textarea:
+            <textarea cols="50" rows="3" placeholder="default"> 입력하세요.</textarea>
+      </p>
+</form>
+```
+<img src="./imgs/textarea.png" width="300">
+  
+  
+* * *
+③ select
+드롭다운 형식의 선택, 선택 항목은 option으로
+value: 서버에 전송되는 값
+```html
+<form>
+      <select name="College">
+            <option value="Engineering"> 공과대학 </option>
+            <option value="LiberalArts"> 인문과학대학 </option>
+            <option value="SocialSciences"> 사회과학대학 </option>
+            <option value="ArtAndDesign"> 조형예술대학 </option>
+      </select>
+      <select name="major">
+            <option value="CSE"> 컴퓨터공학과 </option>
+            <option value="FSE"> 식품공학과 </option>
+            <option value="Architecture"> 건축학과 </option>
+            <option value="Envse"> 환경공학과 </option>
+      </select>
+</form>     
+```
+<img src="./imgs/select.png" width="300">
+
+* * *
+④ label  
+form의 양식에 이름을 붙이는 태그
+주요 속성은 for (label의 for와 양식의 id값이 같으면 연결된다.)
+label을 클릭하면 연결된 양식에 입력할 수 있도록 하거나, 체크를 하거나/해제한다.
+```html
+<form>
+      <p>
+            <label for="input_text"> Input-Text </label>
+            <input type="text" id="input_text">
+      </p>
+      <p>
+            <label for="input_checkbox"> Input-Checkbox </label>
+            <input type="checkbox" id="input_checkbox">
+      </p>
+</form>
+```
+*또는*  
+```html
+<label> Input-Text <input type="text"> </label>
+```
+와 같이 label로 감싸는 형태이면 id나 for 없이도 같은 결과를 얻을 수 있다
+<img src="./imgs/select.png" width="300">
+--> label 글자를 클릭해도 textarea, checkbox를 클릭한 것과 같은 반응을 보임
+
 * * *
 참조
 - https://velog.io/@choiiis/HTMLCSS-form-%ED%83%9C%EA%B7%B8-%EC%A0%95%EB%A6%AC
+- https://www.codingfactory.net/11008
