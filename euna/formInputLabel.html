@@ -36,6 +36,51 @@
                 <input type="checkbox" name="game_title" value="ringFit" checked> 링피트 <br>
                 <input type="checkbox" name="game_title" value="animalCrossing" checked> 모여봐요 동물의숲<br></td>
         </tr>
+        <tr>
+            <td> Hidden: </td>
+            <td> <input type="hidden" name="hide" value="숨겨진 내용"> </td>
+        </tr>
     </table>
-    
+</form>
+<br />
+<form action="formInputLabel.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="selected-file">
+    <input type="submit" value="파일등록">
+</form>
+
+<br/>
+<form>
+    <p> textarea:<br />
+          <textarea cols="40" rows="3" placeholder="default"> 입력하세요.</textarea>
+    </p>
+</form>
+<br />
+<form>
+    <select name="College">
+          <option value="Engineering"> 공과대학 </option>
+          <option value="LiberalArts"> 인문과학대학 </option>
+          <option value="SocialSciences"> 사회과학대학 </option>
+          <option value="ArtAndDesign"> 조형예술대학 </option>
+    </select>
+    <select name="major">
+          <option value="CSE"> 컴퓨터공학과 </option>
+          <option value="FSE"> 식품공학과 </option>
+          <option value="Architecture"> 건축학과 </option>
+          <option value="Envse"> 환경공학과 </option>
+    </select>
+</form>
+<br/>
+
+<form>
+    <p>
+          <label for="input_text"> Input-Text </label>
+          <input type="text" id="input_text">
+          <!--또는 
+          <label> Input-Text <input type="text"> </label>
+          과 같이 표현할 수 있음-->
+    </p>
+    <p>
+          <label for="input_checkbox"> Input-Checkbox </label>
+          <input type="checkbox" id="input_checkbox">
+    </p>
 </form>
