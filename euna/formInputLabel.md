@@ -42,7 +42,7 @@ autofocus: html작동시 초기 커서의 위치로 설정
 TEXT: <input type="text" name="id" value="value" placeholder="placeholder"
        required pattern="[a-zA-Z].+[0-9]" autocomplete="off" autofocus>
 ```
-<img src="./imgs/input1.png" width="200"/>
+<img src="./imgs/input1.png" width="300"/>
   
 - password type
 비밀번호 입력 시 사용, 입력 내용이 보이지 않는다.
@@ -50,16 +50,16 @@ TEXT: <input type="text" name="id" value="value" placeholder="placeholder"
 Password: 
 <input type="password" name="pwd" placeholder="password를 입력하세요.">
 ```
-<img src="./imgs/input2.png" width="200"/>
-<img src="./imgs/input3.png" width="200"/>
+<img src="./imgs/input2.png" width="300">
+<img src="./imgs/input3.png" width="300"/>
 
 - button type
 ```html
 Button: 
 <input type="button" value="전송" onclick="alert('알림을 띄웁니다')">
 ```
-<img src="./imgs/input4.png" width="200"/>
-<img src="./imgs/input5.png" width="200"/>
+<img src="./imgs/input4.png" width="300"/>
+<img src="./imgs/input5.png" width="300"/>
   
 - reset type
 form에 입력한 모든 데이터를 초기화한다.
@@ -67,7 +67,7 @@ form에 입력한 모든 데이터를 초기화한다.
 Reset:
 <input type="reset">
 ```
-<img src="./imgs/input6.png" width="200"> --> reset 후 <img src="./imgs/input7.png" width="200"/>
+<img src="./imgs/input6.png" width="300"> --> reset 후 <img src="./imgs/input7.png" width="300"/>
   
 - radio type
 여러 항목 중 단일선택
@@ -79,7 +79,7 @@ Radio:
 <input type="radio" name="time" value="eightToNine"> 8-9시 <br>
 <input type="radio" name="time" value="eightToNine" checked> 11-12시
 ```
-<img src="./imgs/input8.png" width="200">
+<img src="./imgs/input8.png" width="300">
 
 - checkbox type
 여러 항목 중 다중선택 가능
@@ -90,7 +90,7 @@ Radio:
 <input type="checkbox" name="game_title" value="ringFit" checked> 링피트 <br>
 <input type="checkbox" name="game_title" value="animalCrossing" checked> 모여봐요 동물의숲<br>
 ```
-
+<img src="./imgs/input9.png" width="300">
 
 * * *
 참조
