@@ -24,7 +24,9 @@ form 속성
   
  
    
-### 2. form 내부 태그
+### 2. form 내부 태그  
+-> input, textarea, select, label 태그가 있음.
+  
 ① input  
 |속성|설명|예시
 |---|---|---|  
