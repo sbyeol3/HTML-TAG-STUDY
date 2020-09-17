@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="title" content="meta태그와 button태그를 연습해보자">
+        <h2>meta태그와 button태그를 연습해보자</h2>
+        <style>
+            #btn_test1{
+                border-top-left-radius: 5px; 
+                border-bottom-left-radius: 5px;
+                margin-right: -7px;
+            }
+            #btn_test2{
+                border-top-right-radius: 5px; 
+                border-bottom-right-radius: 5px;
+                margin-right: -2px;
+            }
+            #btn button{
+                border: 1px solid green;
+                background-color: white;
+                color: green;
+                padding: 5px;
+            }
+            #btn button:hover{ 
+                color:white; 
+                background-color: green; 
+                }
+        </style>
+    </head>
+    <body>
+        <div id="btn">
+            <button id="btn_test1" onclick="btn1_click();">테스트1</button>
+            <button id="btn_test2" onclick="btn2_click();">테스트2</button>
+        </div>
+        <script>
+            function btn1_click() {
+                alert("테스트1을 눌렀습니다!")
+            }
+            function btn2_click() {
+                alert("테스트2를 눌렀습니다!")
+            }
+        </script>
+    </body>
+</html>
