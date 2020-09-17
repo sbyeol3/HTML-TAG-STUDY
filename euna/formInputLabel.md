@@ -50,16 +50,14 @@ TEXT: <input type="text" name="id" value="value" placeholder="placeholder"
 Password: 
 <input type="password" name="pwd" placeholder="password를 입력하세요.">
 ```
-<img src="./imgs/input2.png" width="300">
-<img src="./imgs/input3.png" width="300"/>
+<img src="./imgs/input2.png" width="300"> <img src="./imgs/input3.png" width="300"/>
 
 - button type
 ```html
 Button: 
 <input type="button" value="전송" onclick="alert('알림을 띄웁니다')">
 ```
-<img src="./imgs/input4.png" width="300"/>
-<img src="./imgs/input5.png" width="300"/>
+<img src="./imgs/input4.png" width="300"/> <img src="./imgs/input5.png" width="300"/>
   
 - reset type
 form에 입력한 모든 데이터를 초기화한다.
