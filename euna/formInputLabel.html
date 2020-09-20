@@ -1,0 +1,86 @@
+<form name="profile" action="/action_page.html" method="get" 
+      autocomplete="on">
+  <input type="text" name="id">
+  <select>
+    <option value="blue">
+  </select>
+</form>
+<br /> <br /> <br /> <br />
+<form>
+    <table>
+        <tr>
+            <td> Text: </td>
+            <td> <input type="text" name="id" value="value" placeholder="placeholder"
+                required pattern="[a-zA-Z].+[0-9]" autocomplete="off" autofocus> </td>
+        </tr>
+        <tr>
+            <td> Password: </td>
+            <td> <input type="password" name="pwd" placeholder="password를 입력하세요."></td>
+        </tr>
+        <tr>
+            <td> Button: </td>
+            <td> <input type="button" value="전송" onclick="alert('알림을 띄웁니다')"> </td>
+        </tr>
+        <tr>
+            <td> Reset: </td>
+            <td> <input type="reset"> </td>
+        </tr>
+        <tr>
+            <td> Radio: </td>
+            <td> <input type="radio" name="time" value="eightToNine"> 8-9시 <br>
+                <input type="radio" name="time" value="eightToNine" checked> 11-12시 </td>
+        </tr>
+        <tr>
+            <td> Checkbox: </td>
+            <td> <input type="checkbox" name="game_title" value="zelda" checked> 젤다의전설 야생의숨결<br>
+                <input type="checkbox" name="game_title" value="ringFit" checked> 링피트 <br>
+                <input type="checkbox" name="game_title" value="animalCrossing" checked> 모여봐요 동물의숲<br></td>
+        </tr>
+        <tr>
+            <td> Hidden: </td>
+            <td> <input type="hidden" name="hide" value="숨겨진 내용"> </td>
+        </tr>
+    </table>
+</form>
+<br />
+<form action="formInputLabel.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="selected-file">
+    <input type="submit" value="파일등록">
+</form>
+
+<br/>
+<form>
+    <p> textarea:<br />
+          <textarea cols="40" rows="3" placeholder="default"> 입력하세요.</textarea>
+    </p>
+</form>
+<br />
+<form>
+    <select name="College">
+          <option value="Engineering"> 공과대학 </option>
+          <option value="LiberalArts"> 인문과학대학 </option>
+          <option value="SocialSciences"> 사회과학대학 </option>
+          <option value="ArtAndDesign"> 조형예술대학 </option>
+    </select>
+    <select name="major">
+          <option value="CSE"> 컴퓨터공학과 </option>
+          <option value="FSE"> 식품공학과 </option>
+          <option value="Architecture"> 건축학과 </option>
+          <option value="Envse"> 환경공학과 </option>
+    </select>
+</form>
+<br/>
+
+<form>
+    <p>
+          <label for="input_text"> Input-Text </label>
+          <input type="text" id="input_text">
+          <!--또는 
+          <label> Input-Text <input type="text"> </label>
+          과 같이 표현할 수 있음-->
+    </p>
+    <p>
+          <label for="input_checkbox"> Input-Checkbox </label>
+          <input type="checkbox" id="input_checkbox">
+    </p>
+</form>
