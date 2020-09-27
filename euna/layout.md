@@ -72,15 +72,16 @@ ul과 ol 하위에 li 태그가 올 수 있음.
 ```
 
 ### layout
-<img src="./imgs/layout.png" width="600"/>
-|의미요소|설명|
-|---|---|
-|header|문서, 섹션에 대한 헤더를 정의|
-|nav|문서의 탐색 링크|
-|section|섹션부분|
-|article|독립적인 하나의 글|
-|aside|페이지 부분 이외의 컨텐츠|
-|footer|문서, 섹션에 대한 푸터를 정의|
+<img src="./imgs/layout.png" width="600"/>  
+
+|의미요소|설명|  
+|---|---|  
+|header|문서, 섹션에 대한 헤더를 정의|  
+|nav|문서의 탐색 링크|  
+|section|섹션부분|  
+|article|독립적인 하나의 글|  
+|aside|페이지 부분 이외의 컨텐츠|  
+|footer|문서, 섹션에 대한 푸터를 정의|  
 
 ```html
 <html>
