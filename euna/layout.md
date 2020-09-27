@@ -71,7 +71,7 @@ ul과 ol 하위에 li 태그가 올 수 있음.
 일요일
 ```
 
-### layout
+### 3. layout
 <img src="./imgs/layout.png" width="600"/>  
 
 |의미요소|설명|  
@@ -83,93 +83,91 @@ ul과 ol 하위에 li 태그가 올 수 있음.
 |aside|페이지 부분 이외의 컨텐츠|  
 |footer|문서, 섹션에 대한 푸터를 정의|  
 
-```html
-<html>
-    <head>
-        <title>layout</title>
-        <style>
-            body {
-                text-align: center;
-                color: black;
-                width: 1000px;
-            }
-            div#wapper{
-                width:100%;
-                text-align:left;
-                min-height:300px;
-                margin:0 auto;
-            }
-            header, footer, nav, aside, section{
-                border: 1px solid #999;
-                margin: 5px;
-                padding: 10px;
-            }
-            header{
-                height: 50px;
-                background-color: #6ba292;
-            }
-            nav, section, aside{
-                float: left;
-                height: 200px;
-            }
-            nav{
-                background-color: #ffdc7c;
-                width: 130px;
-            }
-            section{
-                background-color: #e4fde1;
-                width:604px;
-            }
-            aside{
-                background-color: #ff9b71;
-                width: 170px;
-            }
-            footer{
-                height: 50px;
-                background-color: #dd614a;
-                position: relative;
-                clear: both;
-            }
-            article{
-                width:90%;
-                margin:20px;
-                background-color:white;
-                border: 1px solid gray;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="wapper">
-            <header><h2>Header 영역</h2></header>
+**css**
+```css
+body {
+    text-align: center;
+    color: black;
+    width: 1000px;
+}
+div#wapper{
+    width:100%;
+    text-align:left;
+    min-height:300px;
+    margin:0 auto;
+}
+header, footer, nav, aside, section{
+    border: 1px solid #999;
+    margin: 5px;
+    padding: 10px;
+}
+header{
+    height: 50px;
+    background-color: #6ba292;
+}
+nav, section, aside{
+    float: left;
+    height: 200px;
+}
+nav{
+    background-color: #ffdc7c;
+    width: 130px;
+}
+section{
+    background-color: #e4fde1;
+    width:604px;
+}
+aside{
+    background-color: #ff9b71;
+    width: 170px;
+}
+footer{
+    height: 50px;
+    background-color: #dd614a;
+    position: relative;
+    clear: both;
+}
+article{
+    width:90%;
+    margin:20px;
+    background-color:white;
+    border: 1px solid gray;
+}
+```
 
-            <nav>
-                <h2>Nav 영역</h2>
-                <ul>
-                    <li> 탐색1 </li>
-                    <li> 탐색2 </li>
-                    <li> 탐색3 </li> 
-                </ul>
-            </nav>
-            
-            <section>
-                Section 영역
-                <article>article 1</article>
-                <article>article 2</article>
-            </section>
-    
-            <aside>
-                aside 영역
-                <figure>
-                    figure 영역
-                    <img src="https://www.poom.co.kr/Upload2/Product/201806/1806190337_detail1.jpg?cmd=thumb&w=270&h=270&fit=true" width="100">
-                    <figcaption> 아트박스 말리인형</figcaption>
-                </figure>
-            </aside>
-            
-            <footer><h2>Footer 영역</h2></footer>
-        </div>
-    </body>
-</html>
+**html**
+```html
+<body>
+    <div id="wapper">
+        <header><h2>Header 영역</h2></header>
+
+        <nav>
+            <h2>Nav 영역</h2>
+            <ul>
+                <li> 탐색1 </li>
+                <li> 탐색2 </li>
+                <li> 탐색3 </li> 
+            </ul>
+        </nav>
+        
+        <section>
+            Section 영역
+            <article>article 1</article>
+            <article>article 2</article>
+        </section>
+
+        <aside>
+            aside 영역
+            <figure>
+                figure 영역
+                <img src="https://www.poom.co.kr/Upload2/Product/201806/1806190337_detail1.jpg?cmd=thumb&w=270&h=270&fit=true" width="100">
+                <figcaption> 아트박스 말리인형</figcaption>
+            </figure>
+        </aside>
+        
+        <footer><h2>Footer 영역</h2></footer>
+    </div>
+</body>
 ```
 <img src="./imgs/layout2.png" width="600"/>
 
