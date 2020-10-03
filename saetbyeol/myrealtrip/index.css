@@ -147,7 +147,7 @@ header.main {
 
 .main-trip .location-tab {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -156,6 +156,20 @@ header.main {
     background-color: rgba(var(--lightgray-rgb), 0.1);
     border-radius: 15px 15px 0 0;
     font-size: 17px;
+}
+
+.main-trip .location-tab .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-trip .location-tab .selected {
+    background-color: #FFF;
+    font-weight: 700;
 }
 
 .main-trip .contents {
@@ -183,6 +197,7 @@ header.main {
 }
 
 .trip-category .contents .icon-label {
+    position: relative;
     width: 123px;
     padding: 15px 0;
     border: 1px solid rgba(var(--lightgray-rgb), 0.2);
@@ -190,6 +205,19 @@ header.main {
     font-size: 14px;
     text-align: center;
     color: var(--main-darkgray);
+}
+
+.trip-category .contents .icon-label .additional {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 3px 6px;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-red);
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #FFF;
 }
 
 .trip-category .contents .icon-label img {
