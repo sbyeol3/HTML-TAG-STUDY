@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이리얼트립 :: 여행의 모든 것</title>
-    <link type="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <nav id="nav-bar">
@@ -12,22 +12,51 @@
         <span>
             <input type="text" placeholder="여행지나 상품을 검색해보세요"/>
         </span>
-        <button>파트너 등록하기</button>
-        <button>로그인</button>
-        <button>회원가입</button>
+        <button class='nav-btn partners'>파트너 등록하기</button>
+        <button class='nav-btn'>로그인</button>
+        <button class='nav-btn signup'>회원가입</button>
     </nav>
-    <header>국내여행, 떠나볼까요?</header>
-    <section>
-        <ul>
-            <li>제주도</li>
+    <header class="main">국내여행, 떠나볼까요?</header>
+    <section class='main-trip'>
+        <ul class='location-tab'>
+            <li class="selected">제주도</li>
             <li>서울</li>
             <li>강원도</li>
             <li>부산</li>
         </ul>
-        <div>
-            <span>
-                제주항공권
-            </span>
+        <div class="contents">
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">제주항공권</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/2_original_1596704107.png?1596704107" alt="airplane">
+                <span class="label">호텔예약</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/4_original_1592284718.png?1592284718" alt="airplane">
+                <span class="label">감성숙소</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">렌터카</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">스냅촬영</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">이색체험</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">뚜벅이투어</span>
+            </a>
+            <a class='icon-label'>
+                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599" alt="airplane">
+                <span class="label">전체보기</span>
+            </a>
         </div>
     </section>
     <section>

@@ -1,0 +1,116 @@
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #FFF;
+    color: var(--main-black);
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.icon-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+:root {
+    --main-black: #343A40;
+    --main-darkgray: #495056;
+    --main-gray: #666D75;
+    --main-lightgray: #848C94;
+    --main-blue: #2B96ED;
+    --main-red: #FA5B4A;
+    --black-rgb: 51, 58, 64;
+    --darkgray-rgb: 73, 80, 86;
+    --gray-rgb: 102, 110, 117;
+    --lightgray-rgb: 132, 140, 148;
+    --blue-rgb: 43, 150, 237;
+    --red-rgb: 250, 91, 74;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+}
+
+#nav-bar .partners {
+    margin-left: auto !important;
+}
+
+#nav-bar .nav-btn {
+    margin: 0 5px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--main-darkgray);
+    font-size: 15px;
+}
+
+#nav-bar .nav-btn:hover {
+    background-color: rgba(var(--lightgray-rgb), 0.1);
+}
+
+#nav-bar .nav-btn.signup {
+    padding: 10px 25px;
+    border: 1px solid var(--main-blue);
+    color: var(--main-blue);
+    font-weight: bold;
+}
+
+#nav-bar .nav-btn.signup:hover {
+    background-color: rgba(var(--blue-rgb), 0.1);
+}
+
+header.main {
+    margin: 100px auto 30px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.main-trip {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid rgba(var(--lightgray-rgb), 0.1);
+}
+
+.main-trip .location-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    list-style: none;
+    background-color: rgba(var(--lightgray-rgb), 0.1);
+    border-radius: 15px 15px 0 0;
+    font-size: 17px;
+}
+
+.main-trip .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 70px;
+}
+
+.main-trip .contents .label {
+    margin: auto;
+    color: var(--main-darkgray);
+}
+
+.main-trip .contents img {
+    width: 56px;
+    height: 56px;
+    margin: 10px auto;
+}
