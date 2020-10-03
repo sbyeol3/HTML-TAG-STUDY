@@ -5,16 +5,6 @@ body {
     color: var(--main-black);
 }
 
-.bold {
-    font-weight: bold !important;
-}
-
-.icon-label {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-
 :root {
     --main-black: #343A40;
     --main-darkgray: #495056;
@@ -22,6 +12,7 @@ body {
     --main-lightgray: #848C94;
     --main-blue: #2B96ED;
     --main-red: #FA5B4A;
+    --shadow: 33, 37, 41, 0.15;
     --black-rgb: 51, 58, 64;
     --darkgray-rgb: 73, 80, 86;
     --gray-rgb: 102, 110, 117;
@@ -33,6 +24,23 @@ body {
 button {
     border: none;
     background: none;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.icon-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--main-black);
 }
 
 #nav-bar {
@@ -80,8 +88,10 @@ header.main {
 .main-trip {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     border-radius: 15px;
     border: 1px solid rgba(var(--lightgray-rgb), 0.1);
+    box-shadow: 0 8px 16px 0 rgba(var(--shadow));
 }
 
 .main-trip .location-tab {
@@ -106,6 +116,7 @@ header.main {
 
 .main-trip .contents .label {
     margin: auto;
+    text-align: center;
     color: var(--main-darkgray);
 }
 
@@ -113,4 +124,86 @@ header.main {
     width: 56px;
     height: 56px;
     margin: 10px auto;
+}
+
+.trip-category .contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-category .contents .icon-label {
+    width: 123px;
+    padding: 15px 0;
+    border: 1px solid rgba(var(--lightgray-rgb), 0.2);
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--main-darkgray);
+}
+
+.trip-category .contents .icon-label img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 3px auto;
+}
+
+.trip-category .contents .icon-label:hover {
+    background-color: rgba(var(--lightgray-rgb), 0.1);
+}
+
+/* common card */
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid rgba(var(--lightgray-rgb), 0.2);
+    border-radius: 4px;
+    letter-spacing: -.2px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(var(--shadow));
+}
+
+.card img {
+    width: 100%;
+    height: 166px;
+    border-radius: 4px 4px 0 0;
+}
+
+.card .contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #FFF;
+}
+
+.card .contents .category {
+    font-size: 12px;
+    color: var(--main-lightgray);
+}
+
+.card .contents .card-title {
+    margin: 3px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* hot place */
+.hotplace {
+    margin: 30px 0;
+}
+
+/* 펜션&캠핑 */
+.camping {
+    margin: 30px 0;
 }
