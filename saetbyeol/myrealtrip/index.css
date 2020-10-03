@@ -43,6 +43,7 @@ ul {
 }
 
 .section {
+    box-sizing: border-box;
     max-width: 1100px;
     margin: 30px auto;
 }
@@ -67,6 +68,7 @@ ul {
     align-items: center;
     max-width: 1100px;
     height: 72px;
+    margin: 0 auto;
 }
 
 #nav-bar .partners {
@@ -201,6 +203,11 @@ header.main {
     border-radius: 4px 4px 0 0;
 }
 
+.card .small-icon {
+    width: 12px;
+    height: 12px;
+}
+
 .card .contents {
     box-sizing: border-box;
     display: flex;
@@ -217,9 +224,35 @@ header.main {
 }
 
 .card .contents .card-title {
-    margin: 3px 0;
+    margin: 3px 0 15px 0;
     font-size: 15px;
     font-weight: 600;
+}
+
+.card .contents .bottom {
+    margin-top: auto;
+}
+
+.card .contents .review-event {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: var(--main-blue);
+}
+
+.card .contents .price {
+    font-size: 12px;
+    color: var(--main-lightgray);
+    letter-spacing: 0;
+}
+
+.card .contents .price .before {
+    text-decoration: line-through;
+}
+
+.card .contents .price .after {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-gray);
 }
 
 /* hot place */
