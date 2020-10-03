@@ -45,7 +45,7 @@ ul {
 .section {
     box-sizing: border-box;
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 70px auto;
 }
 
 .icon-label {
@@ -343,6 +343,46 @@ header.main {
 
 .banner-invite .point-btn:hover {
     background-color: var(--main-blue);
+}
+
+/* 마이리얼트립 여행정보 */
+.information {
+    margin: 70px auto 120px auto;
+}
+
+.information .sns-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: rgba(var(--lightgray-rgb), 0.05);
+    border: 1px solid rgba(var(--lightgray-rgb), 0.15);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.information .sns {
+    margin: 0 35px;
+}
+
+.information .sns .sns-header {
+    display: flex;
+    align-items: center;
+}
+
+.information .sns img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.information .sns .sns-name {
+    color: var(--main-blue);
+}
+
+.information .sns .details {
+    margin-bottom: 0;
+    color: var(--main-lightgray);
+    line-height: 1.7;
 }
 
 /* footer */
