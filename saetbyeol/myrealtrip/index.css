@@ -26,6 +26,10 @@ button {
     background: none;
 }
 
+.blue {
+    color: var(--main-blue);
+}
+
 .bold {
     font-weight: bold !important;
 }
@@ -163,14 +167,14 @@ header.main {
     display: flex;
     flex-direction: column;
     width: 250px;
-    border: 1px solid rgba(var(--lightgray-rgb), 0.2);
+    border: 1px solid rgba(var(--lightgray-rgb), 0.3);
     border-radius: 4px;
     letter-spacing: -.2px;
     cursor: pointer;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(var(--shadow));
+    box-shadow: 1px 1px 4px 1px rgba(var(--shadow));
 }
 
 .card img {
@@ -180,11 +184,13 @@ header.main {
 }
 
 .card .contents {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px 15px;
     background-color: #FFF;
+    border-radius: 0 0 4px 4px;
 }
 
 .card .contents .category {
@@ -206,4 +212,44 @@ header.main {
 /* 펜션&캠핑 */
 .camping {
     margin: 30px 0;
+}
+
+/* 친구 초대 배너 */
+.banner-invite {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(var(--blue-rgb), 0.07);
+    border: 1px solid rgba(var(--blue-rgb), 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.banner-invite .text {
+    margin-left: 20px;
+}
+
+.banner-invite .main {
+    margin: 0 0 10px 0;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.banner-invite .sub {
+    margin: 0;
+    font-size: 15px;
+    color: var(--main-darkgray);
+}
+
+.banner-invite .point-btn {
+    margin-left: auto;
+    padding: 10px 18px;
+    background-color: rgba(var(--blue-rgb), 0.8);
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.banner-invite .point-btn:hover {
+    background-color: var(--main-blue);
 }
