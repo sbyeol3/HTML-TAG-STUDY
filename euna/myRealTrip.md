@@ -69,7 +69,7 @@ button:hover{
   
   
 ### aside
-- a 태그의 속성을 없애고 싶은 경우 ```css a { text-decoration: none; }```을 이용한다.  
+- a 태그의 속성을 없애고 싶은 경우 ``` a { text-decoration: none; }```을 이용한다.  
 참조 : https://electronic-moongchi.tistory.com/90
 
 
