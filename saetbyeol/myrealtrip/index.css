@@ -1,5 +1,4 @@
 body {
-    max-width: 1100px;
     margin: 0 auto;
     background-color: #FFF;
     color: var(--main-black);
@@ -12,6 +11,7 @@ body {
     --main-lightgray: #848C94;
     --main-blue: #2B96ED;
     --main-red: #FA5B4A;
+    --footer: 53, 58, 60;
     --shadow: 33, 37, 41, 0.15;
     --black-rgb: 51, 58, 64;
     --darkgray-rgb: 73, 80, 86;
@@ -26,12 +26,25 @@ button {
     background: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .blue {
     color: var(--main-blue);
 }
 
+.semibold {
+    font-weight: 600 !important;
+}
+
 .bold {
-    font-weight: bold !important;
+    font-weight: 700 !important;
+}
+
+.section {
+    max-width: 1100px;
+    margin: 30px auto;
 }
 
 .icon-label {
@@ -47,10 +60,12 @@ button {
     color: var(--main-black);
 }
 
+/* nav */
+
 #nav-bar {
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 1100px;
     height: 72px;
 }
 
@@ -89,10 +104,13 @@ header.main {
     font-weight: 600;
 }
 
+/* 상단 국내여행 */
+
 .main-trip {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
     border-radius: 15px;
     border: 1px solid rgba(var(--lightgray-rgb), 0.1);
     box-shadow: 0 8px 16px 0 rgba(var(--shadow));
@@ -205,14 +223,8 @@ header.main {
 }
 
 /* hot place */
-.hotplace {
-    margin: 30px 0;
-}
 
 /* 펜션&캠핑 */
-.camping {
-    margin: 30px 0;
-}
 
 /* 친구 초대 배너 */
 .banner-invite {
@@ -252,4 +264,88 @@ header.main {
 
 .banner-invite .point-btn:hover {
     background-color: var(--main-blue);
+}
+
+/* footer */
+#footer {
+    padding: 50px  calc(50vw - 550px);
+    background-color: rgba(var(--footer), 0.02);
+    border-top: 1px solid rgba(var(--lightgray-rgb), 0.15);
+    color: var(--main-gray);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px 20px 0;
+
+    border-bottom: 1px solid rgba(var(--lightgray-rgb), 0.2);
+}
+
+.footer-top .customer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top .customer .details { font-size: 12px;}
+.footer-top .customer .cus-title { 
+    font-size: 15px;
+}
+.footer-top .customer .tel { 
+    margin: 15px 0;
+    font-size: 18px;
+}
+.footer-top .customer .chat-btn {
+    margin-top: 20px;
+    width: 110px;
+    padding: 10px 0;
+    border: 1px solid rgba(var(--lightgray-rgb), 0.5);
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--main-gray);
+}
+
+.footer-top .list-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-top .list {
+    padding-left: 3px;
+    list-style: none;
+    font-weight: 700;
+}
+
+.footer-top .list li {
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-bottom .container .list {
+    display: flex;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: 1.7;
+}
+
+.footer-bottom .container .list li {
+   margin: 3px;
+   padding: 12px;
+}
+
+.footer-bottom .copyright {
+    margin-top: 16px;
+    line-height: 1.67;
+    font-size: 12px;
+    color: var(--main-lightgray);
+}
+
+#footer .container .list li:hover {
+    background-color: rgba(var(--blue-rgb), 0.06);
+    color: var(--main-blue);
 }
