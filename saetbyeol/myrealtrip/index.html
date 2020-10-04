@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>마이리얼트립 :: 여행의 모든 것</title>
+    <link rel='stylesheet' href='./index.css'>
+</head>
+<body>
+    <nav id='nav-bar' class='section'>
+        <img src='https://www.myrealtrip.com/webpack/203bb94a1437a3d33bca75e5e77ab705.png'>
+        <span class='search'>
+            <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjODQ4Qzk0IiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgPHBhdGggZD0iTTguNjY3IDE0LjU4M2E1LjkxNSA1LjkxNSAwIDAgMCA1LjkxNi01LjkxNkE1LjkxNSA1LjkxNSAwIDAgMCA4LjY2NyAyLjc1IDUuOTE1IDUuOTE1IDAgMCAwIDIuNzUgOC42NjdhNS45MTUgNS45MTUgMCAwIDAgNS45MTcgNS45MTZ6Ii8+CiAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNMTMuMTExIDEzLjExMWw0LjQ0NSA0LjQ0NSIvPgogICAgPC9nPgo8L3N2Zz4K' alt='검색'>
+            <input type='search' placeholder='여행지나 상품을 검색해보세요'/>
+        </span>
+        <button class='nav-btn partners'>파트너 등록하기</button>
+        <button class='nav-btn'>로그인</button>
+        <button class='nav-btn signup'>회원가입</button>
+    </nav>
+    <div class='main'>국내여행, 떠나볼까요?</div>
+    <section class='main-trip section'>
+        <ul class='location-tab'>
+            <li class='tab selected'>제주도</li>
+            <li class='tab'>서울</li>
+            <li class='tab'>강원도</li>
+            <li class='tab'>부산</li>
+        </ul>
+        <div class='contents'>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/1_original_1592284599.png?1592284599' alt='airplane'>
+                <span class='label'>제주항공권</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/2_original_1596704107.png?1596704107' alt='hotel'>
+                <span class='label'>호텔예약</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/4_original_1592284718.png?1592284718' alt='house'>
+                <span class='label'>감성숙소</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/3_original_1592284680.png?1592284680' alt='car'>
+                <span class='label'>렌터카</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/36_original_1596703075.png?1596703075' alt='camera'>
+                <span class='label'>스냅촬영</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/7_original_1596704067.png?1596704067' alt='tent'>
+                <span class='label'>이색체험</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/5_original_1596704189.png?1596704189' alt='warking person'>
+                <span class='label'>뚜벅이투어</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/8_original_1592284823.png?1592284823' alt='total'>
+                <span class='label'>전체보기</span>
+            </a>
+        </div>
+    </section>
+    <section class='trip-category section'>
+        <div class='title'>여행 카테고리</div>
+        <div class='contents'>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/26_original_1592895468.png?1592895468'>
+                <span>항공권</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/20_original_1596708902.png?1596708902'>
+                <span>호텔</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/38_original_1597039977.png?1597039977'>
+                <span>펜션&캠핑</span>
+                <span class='additional'>10%쿠폰</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955'>
+                <span>투어&티켓</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/29_original_1593688280.png?1593688280'>
+                <span>랜선투어</span>
+                <span class='additional'>Live</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/23_original_1592285022.png?1592285022'>
+                <span>국내골프</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/22_original_1592285011.png?1592285011'>
+                <span>패키지</span>
+            </a>
+            <a class='icon-label'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/cms_icons/24_original_1592285048.png?1592285048'>
+                <span>할인혜택</span>
+            </a>
+        </div>
+    </section>
+    <article class='banner section'>
+        <img src='https://d2ur7st6jjikze.cloudfront.net/cms/1424_original_1601020533.jpg?1601020533' >
+    </article>
+    <article class='hotplace section'>
+        <div class='title'>전국 핫플 최저가 🎠</div>
+        <div class='card-list'>
+            <div class='card hp-card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/43365/538760_medium_1600231997.jpg?1600231997'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ∙ 서울</span>
+                    <div class='card-title'>[기간특가] 에버랜드 자유이용권 종일/오후/나이트권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>959</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>46,000원</span>
+                        <span class='after'>22,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card hp-card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/70816/540553_medium_1601392557.jpg?1601392557'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ∙ 서울</span>
+                    <div class='card-title'>[~10/4한정50%할인] 롯데월드 자유이용권 & 패밀리권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>451</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>46,000원</span>
+                        <span class='after'>22,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card hp-card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/84620/518630_medium_1594111483.jpg?1594111483'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ∙ 서울</span>
+                    <div class='card-title'>[~10/4한정42%할인] 롯데월드 아쿠아리움 이용권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>134</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>31,000원</span>
+                        <span class='after'>17,900원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card hp-card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/14735/89376_medium_1578031667.jpg?1578031667'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ∙ 서울</span>
+                    <div class='card-title'>[~10/4한정파격특가] 서울 63빌딩 아쿠아플라넷63 입장권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>164</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>15,000원</span>
+                        <span class='after'>11,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='camping section'>
+        <div class='title'>전국 핫한 펜션&캠핑 🏡</div>
+        <div class='card-list'>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/92811/523620_medium_1597919169.jpg?1597919169'>
+                <div class='contents'>
+                    <span class='category'>펜션 ・ 경기도</span>
+                    <div class='card-title'>가평 라플로르 펜션</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='after'>120,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/86076/523622_medium_1597919353.jpg?1597919353'>
+                <div class='contents'>
+                    <span class='category'>펜션 ・ 전라도</span>
+                    <div class='card-title'>여수 케렌시아리조트</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='after'>90,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/88844/523704_medium_1597995702.jpg?1597995702'>
+                <div class='contents'>
+                    <span class='category'>펜션 ・ 강원도</span>
+                    <div class='card-title'>강릉 니나랑펜션</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='after'>100,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/90288/523710_medium_1597997804.jpg?1597997804'>
+                <div class='contents'>
+                    <span class='category'>펜션 ・ 제주도</span>
+                    <div class='card-title'>제주 밧돌 게스트하우스</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='after'>27,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='jeju section'>
+        <div class='title'>제주 교통의 모든 것 🚘</div>
+        <div class='card-list'>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/83467/535844_medium_1598843015.jpg?1598843015'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 제주도</span>
+                    <div class='card-title'>[제주 렌터카] 렌터카플랫폼 찜카 25% 할인권_5,10,15,20만원권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>808</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>50,000원</span>
+                        <span class='after'>37,500원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/83016/515198_medium_1593049840.jpg?1593049840'>
+                <div class='contents'>
+                    <span class='category'>가이드 투어 ・ 제주도</span>
+                    <div class='card-title'>[제주 택시투어] 제주 택시투어 (개인택시 차량가이드)</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>47</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>71,000원</span>
+                        <span class='after'>66,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/84617/535748_medium_1598605235.jpg?1598605235'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 서울</span>
+                    <div class='card-title'>[공항 이동] 타다 AIR 김포공항 출도착 할인 + 보너스 쿠폰(15,000원</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>20</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>60,000원</span>
+                        <span class='after'>50,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/98939/538263_medium_1600067161.jpg?1600067161'>
+                <div class='contents'>
+                    <span class='category'>여행편의 ・ 제주도</span>
+                    <div class='card-title'>김포공항 실내주차+픽업 서비스 할인권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>2</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>15,000원</span>
+                        <span class='after'>14,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='ticket section'>
+        <div class='title'>제주 필수 티켓 🎫</div>
+        <div class='card-list'>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/53556/330238_medium_1596104132.jpg?1596104132'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 제주도</span>
+                    <div class='card-title'>[제주/성산] 아쿠아플라넷 제주 & 미니언즈 특별전 입장권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>149</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>15,000원</span>
+                        <span class='after'>10,500원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/6624/34838_medium_1568101519.jpg?1568101519'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 제주도</span>
+                    <div class='card-title'>[제주/서귀포] 카멜리아힐 입장권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>263</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>71,000원</span>
+                        <span class='after'>66,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/73268/449988_medium_1578301555.jpg?1578301555'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 서울</span>
+                    <div class='card-title'>[제주/안덕] 뽀로로&타요 테마파크 자유이용권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>164</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>60,000원</span>
+                        <span class='after'>50,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/6650/34572_medium_1585117767.jpg?1585117767'>
+                <div class='contents'>
+                    <span class='category'>티켓/패스 ・ 제주도</span>
+                    <div class='card-title'>[제주/조천] *최저가* 에코랜드 입장권</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>114</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>15,000원</span>
+                        <span class='after'>14,000원</span>
+                        <span> / 1인</span>
+                    </div>
+                    <div class='confirmation'>
+                        <img class='small-icon' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgOSAxNiI+CiAgICA8cGF0aCBmaWxsPSIjRkZCRjAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjk2MyAxNlY5LjIzSDBMNS45MjYgMHY2Ljc3aDIuOTYzeiIvPgo8L3N2Zz4K'>
+                        <span>즉시확정</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='guidelive section'>
+        <div class='title'>마이리얼트립x가이드라이브</div>
+        <div class='card-list'>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/99336/539955_medium_1600938879.jpg?1600938879'>
+                <div class='contents'>
+                    <span class='category'>가이드투어 ・ 서울</span>
+                    <div class='card-title'>[랜선투어 : 현지 Live] 이은경 가이드의 파리의 가을 (10/4 저녁 9시)</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='before'>20,000원</span>
+                        <span class='after'>12,900원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/84814/539964_medium_1600941571.jpg?1600941571'>
+                <div class='contents'>
+                    <span class='category'>가이드 투어 ・ 제주도</span>
+                    <div class='card-title'>[랜선투어] 김아람 가이드의 교토의 가을(10/11, 10/18 저녁 9시)</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>9</span>
+                    </div>
+                    <div class='price'>
+                        <span class='before'>15,000원</span>
+                        <span class='after'>9,900원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/99378/540163_medium_1601027860.jpg?1601027860'>
+                <div class='contents'>
+                    <span class='category'>가이드 투어 ・ 서울</span>
+                    <div class='card-title'>[랜선투어 : 현지 Live] 세바 가이드의 바다 위 도시 : 베네치아</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='before'>20,000원</span>
+                        <span class='after'>12,900원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/99427/540453_medium_1601348687.jpg?1601348687'>
+                <div class='contents'>
+                    <span class='category'>가이드 투어 ・ 서울</span>
+                    <div class='card-title'>[오픈 특가] 안지영 가이드의 경복궁 야경투어 (10/11, 10/16 오후 7시)</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='before'>35,000원</span>
+                        <span class='after'>24,900원</span>
+                        <span> / 1인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='jeju-house section'>
+        <div class='title'>제주 감성 숙소 🏡</div>
+        <div class='card-list'>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/83481/512702_medium_1590644053.jpg?1590644053'>
+                <div class='contents'>
+                    <span class='category'>한인민박 ・ 제주도</span>
+                    <div class='card-title'>[서쪽/펜션] 화우재 #커플 #귤밭풍경 #협재부근</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>2</span>
+                    </div>
+                    <div class='price'>
+                        <span class='after'>120,000원</span>
+                        <span> / 1박</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/84640/519321_medium_1594778119.jpg?1594778119'>
+                <div class='contents'>
+                    <span class='category'>한인민박 ・ 제주도</span>
+                    <div class='card-title'>[성산/리조트] 취다선리조트 #다도체험 #명상 #조식 #성산일출봉</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>4</span>
+                    </div>
+                    <div class='price'>
+                        <span class='after'>118,000원</span>
+                        <span> / 1박</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/85166/535985_medium_1598926187.jpg?1598926187'>
+                <div class='contents'>
+                    <span class='category'>한인민박 ・ 제주도</span>
+                    <div class='card-title'>[남원/펜션] 블랑블루펜션 #건축대상수상 #1층카페 #오션뷰 #월머그증정</div>
+                    <span class='review-event bottom'>
+                        <img class='small-icon' src='https://www.myrealtrip.com/webpack/76e8ed4f346658545e984c1c2b55a188.svg'>
+                        후기 이벤트
+                    </span>
+                    <div class='price'>
+                        <span class='after'>68,000원</span>
+                        <span> / 1박</span>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <img src='https://d2ur7st6jjikze.cloudfront.net/offer_photos/81483/500141_medium_1586238366.jpg?1586238366'>
+                <div class='contents'>
+                    <span class='category'>한인민박 ・ 제주도</span>
+                    <div class='card-title'>[동문시장/호스텔] 베드라디오 #1층펍 #루프탑</div>
+                    <div class='score bottom'>
+                        <span class='star'>✭✭✭✭✭</span>
+                        <span class='number'>7</span>
+                    </div>
+                    <div class='price'>
+                        <span class='after'>28,000원</span>
+                        <span> / 1박</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class='banner-invite section'>
+        <img src='https://www.myrealtrip.com/webpack/04805fd6ae2e4dd1317124b6cf1c89fb.svg'>
+        <div class='text'>
+            <p class='main'>친구 초대하면 <span class='blue'>무제한 포인트</span>를 드립니다!</p>
+            <p class='sub'>친구에게 5,000원 쿠폰을 선물하고 2,000 포인트를 받으세요.</p>
+        </div>
+        <button class='point-btn'>포인트 받기</button>
+    </section>
+    <section class='information section'>
+        <div class='title'>마이리얼트립의 여행 정보</div>
+        <div class='sns-list'>
+            <div class='sns'>
+                <div class='sns-div'>
+                    <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTE0Ljk5NCAzMGgxNC45OTRWLjAxMkgwVjMwaDE0Ljk5NHoiLz4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjM0M1QTk5IiBkPSJNMjguMzMzIDMwYy45MTQgMCAxLjY1NS0uNzQxIDEuNjU1LTEuNjU1VjEuNjY3YzAtLjkxNC0uNzQxLTEuNjU1LTEuNjU1LTEuNjU1SDEuNjU1Qy43NDEuMDEyIDAgLjc1MiAwIDEuNjY3djI2LjY3OEMwIDI5LjI1OS43NCAzMCAxLjY1NSAzMGgyNi42Nzh6IiBtYXNrPSJ1cmwoI2IpIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRUZFRkUiIGQ9Ik0yMC41ODMgMzBWMTguNTM1aDMuODI1bC41NzItNC40NjloLTQuMzk3di0yLjg1MmMwLTEuMjk0LjM1Ny0yLjE3NiAyLjItMi4xNzZoMi4zNTJWNS4wNGMtLjQwNy0uMDU0LTEuODAzLS4xNzYtMy40MjctLjE3Ni0zLjM5IDAtNS43MTEgMi4wODItNS43MTEgNS45MDZ2My4yOTVoLTMuODM1djQuNDY5aDMuODM1VjMwaDQuNTg2eiIvPgogICAgPC9nPgo8L3N2Zz4K'>
+                    <span class='sns-name'>마이리얼트립 페이스북 페이지 ></span>
+                </div>
+                <p class='details'>
+                    마이리얼트립 페이스북 페이지에서 각 여행지별로 정리된 유용한 정보와 여행자분들을 위한 이벤트를 확인해보세요.
+                </p>
+            </div>
+            <div class='sns'>
+                <div class='sns-div'>
+                    <img src='https://www.myrealtrip.com/webpack/348c9cdd99bf369fc2ff090f26dcc78a.svg'>
+                    <span class='sns-name'>마이리얼트립 인스타그램 ></span>
+                </div>
+                <p class='details'>
+                    세계 곳곳에서 활동중인 마이리얼트립의 가이드님과 여행자분들이 보내주신 아름다운 사진을 감상해보세요.
+                </p>
+            </div>
+            <div class='sns'>
+                <div class='sns-div'>
+                    <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwQzczQyIgZD0iTTAgMzBoMzBWMEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xNy4zODUgMjEuODdsLTQuODMtNy4xMXY3LjExSDcuNVY4LjE0NWg1LjEzbDQuODMgNy4wOTVWOC4xNDVoNS4wNFYyMS44N3oiLz4KICAgIDwvZz4KPC9zdmc+Cg=='>
+                    <span class='sns-name'>마이리얼트립 네이버 블로그 ></span>
+                </div>
+                <p class='details'>
+                    마이리얼트립의 네이버 블로그에서 리얼생생 여행정보, 여행 후기, 추천 가이드 정보를 확인해보세요.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer id='footer'>
+        <section class='footer-top'>
+            <div class='customer'>
+                <span class='cus-title semibold'>고객센터</span>
+                <span class='tel semibold'>1670-8208</span>
+                <span class='details'>
+                    <span class='semibold'>월~금</span>: 09:00-18:00 (점심시간 12:00-13:00) <span class='semibold'>공휴일&주말</span>: 1:1 채팅 상담만 가능
+                </span>
+                <span class='details'><span class='semibold'>항공권 환불, 변경 접수</span> : 월~금 09:00-17:00</span>
+                <button class='chat-btn semibold'>1:1 채팅상담</button>
+            </div>
+            <div class='container'>
+                <span class='list-title'>소개</span>
+                <ul class='list'>
+                    <li>회사소개</li>
+                    <li>채용</li>
+                </ul>
+            </div>
+            <div class='container'>
+                <span class='list-title'>파트너</span>
+                <ul class='list'>
+                    <li>파트너 등록하기</li>
+                    <li>Affiliate 프로그램</li>
+                    <li>리얼가이드</li>
+                    <li>가이드 블로그</li>
+                </ul>
+            </div>
+            <div class='container'>
+                <span class='list-title'>지원</span>
+                <ul class='list'>
+                    <li>자주 묻는 질문</li>
+                    <li>최저가 보장제</li>
+                </ul>
+            </div>
+        </section>
+        <section class='footer-bottom'>
+            <div class='container'>
+                <ul class='list'>
+                    <li>이용약관</li>
+                    <li>개인정보 처리방침</li>
+                    <li>취소 및 환불 정책</li>
+                </ul>
+            </div>
+            <p class='copyright'>
+                상호명 (주)마이리얼트립 | 대표 이동건 | 개인정보보호책임자 정재훈 | 사업자등록번호 209-81-55339 사업자정보확인 | 통신판매업신고번호 2019-서울서초-0260<br>
+                주소 서울특별시 서초구 강남대로 327, 대륭서초타워 18층(서초동) | 이메일 help@myrealtrip.com | 마케팅/제휴 문의 marketing@myrealtrip.com<br>
+                <br/>
+                자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있습니다. 마이리얼트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 대하여 책임을 지지않습니다.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
