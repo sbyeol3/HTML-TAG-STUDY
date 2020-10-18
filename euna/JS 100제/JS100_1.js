@@ -179,3 +179,176 @@ if (num22%6==0){
     console.log(num22+"는 6의 배수입니다.");
 }
 //답 : 2번
+
+console.log("23번");
+console.log(10/3)
+//답: X
+//출력결과는 3.3333333~
+//Math.floor(x)를 이용한다.
+
+console.log("24번");
+name="mary";
+console.log(name.toUpperCase());
+
+console.log("25번");
+function circle(x){
+    result=x*x*3.14;
+    return result;
+}
+console.log(circle(5));
+
+console.log("26번");
+const planets = {
+	'수성' : 'Mercury',
+	'금성' : 'Venus',
+	'지구' : 'Earth',
+	'화성' : 'Mars',
+	'목성' : 'Jupiter',
+	'토성' : 'Saturn',
+	'천왕성' : 'Uranus',
+	'해왕성' : 'Neptune',
+};
+name="화성";
+console.log(planets[name]);
+
+console.log("27번");
+//const keys = prompt('이름을 입력하세요').split(' ');
+//const values = prompt('점수를 입력하세요').split(' ');
+const keys = ["민지", "수현"];
+const values = [50,60];
+const obj = {};
+for (let i=0; i<keys.length; i++) {
+  obj[keys[i]] = parseInt(values[i], 10);
+}
+console.log(obj);
+
+console.log("28번");
+const str28="Javascript";
+for (var i=0; i<str28.length-1; i++){
+    console.log(str28[i], str28[i+1]);
+}
+
+console.log("29번");
+const str29 = "J";
+if (str29 == str29.toUpperCase()){
+    console.log('YES');
+}
+else{
+    console.log('NO');
+}
+
+console.log("30번");
+str30 = "pineapple is yummy";
+word = "apple";
+console.log(str30.indexOf(word));
+// indexOf()메서드는 주어진 값과 일치하는 요소의 첫번째 인덱스를 반환
+// 없으면 -1 반환
+
+console.log("31번");
+//답: 3,5번
+//slice()와 includes(x)의 경우 O(n)의 복잡도를 가짐
+
+console.log("32번");
+const str32 = "안녕하세요. 저는 제주대학교 컴퓨터공학전공 혜림입니다.";
+console.log(str32.split(' ').length);
+//split을 이용해 스페이스를 기준으로 단어들을 배열에 담는다.
+
+console.log("33번");
+const str33 = "1 2 3 4 5";
+console.log(str33.split(" ").reverse().join(" "));
+
+console.log("34번");
+const str34="176 156 155 165 166 169";
+let new_str34 = str34.split(" ").sort(function(a,b){
+    return a-b;
+}).join(" ");
+if (str34 == new_str34){
+    console.log("YES");
+}
+else{
+    console.log("NO");
+}
+//자바스크립트에서 오름차순 정렬을 하기 위해서는 function을 사용해야함.
+
+console.log("35번");
+//Factory 함수 사용하기
+function one(n){
+    function two(value){
+        const sq = Math.pow(value, n);
+        return sq;
+    }
+    return two;
+}
+//inner function
+const num35_1 = one(2);
+const num35_2 = one(3);
+const num35_3 = one(4);
+
+console.log(num35_1(10));
+console.log(num35_2(10));
+console.log(num35_3(10));
+
+console.log("36번");
+const num36 = 6;
+let result36='';
+for (var i=1; i<=9; i++){
+    result36 += num36*i + ' ';
+}
+console.log(result36);
+
+console.log("37번");
+const str37 = "원범 원범 혜원 혜원 혜원 혜원 유진 유진";
+const arr37 = str37.split(' ');
+const result37 = {};
+for (var i in arr37){
+    if (arr37[i] in result37){
+        result37[arr37[i]]+=1;
+    }
+    else{
+        result37[arr37[i]] = 1;
+    }
+}
+winner = Object.keys(result37).reduce(function(a, b){
+    return result37[a] > result37[b] ? a : b
+  });
+console.log(`${winner}이가 총 ${result37[winner]}표로 반장이 되었습니다.`);
+
+console.log("38번");
+arr38 = "97 86 75 66 55 97 85 97 97 95".split(' ').map(function(n){
+    return parseInt(n, 10);
+});
+arr38.sort((a,b)=>{
+    return a-b;
+});
+console.log(arr38);
+let count = 0;
+let new_arr38=[];
+while (new_arr38.length<3){
+    let n = arr38.pop();
+    if (!new_arr38.includes(n)){
+        new_arr38.push(n);
+    }
+    count+=1;
+}
+console.log(count);
+
+console.log("39번");
+str39 = "hqllo my namq is hyqwon";
+console.log(str39.split('q').join('e'));
+
+console.log("40번");
+const weight = 50;
+const num40 = 5;
+const arr40 = [20,20,10,20,20];
+let sum40 = 0;
+let count40 = 0;
+for (var i in arr40){
+    sum40 += arr40[i];
+    if (sum40 <= weight){
+        count40++;
+    }
+    else{
+        break;
+    }
+}
+console.log(count40);
