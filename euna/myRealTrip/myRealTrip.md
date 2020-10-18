@@ -3,9 +3,9 @@
 link: https://euna789.github.io/HTML-TAG-STUDY/euna/myRealTrip.html
 
 ### 전체 구조
-<img src="./imgs/trip1.png" width="600">
-<img src="./imgs/trip2.png" width="600">
-<img src="./imgs/trip3.png" width="600">
+<img src="../imgs/trip1.png" width="600">
+<img src="../imgs/trip2.png" width="600">
+<img src="../imgs/trip3.png" width="600">
 
 
 ### header
