@@ -55,22 +55,113 @@ const ans41 = (num) => {
     }, 0)
   }
   
-  /*
-  문제 4 :
-   */
-  
-  /*
-  문제 4 :
-   */
-  
-  /*
-  문제 4 :
-   */
-  
-  /*
-  문제 4 :
-   */
-  
-  /*
-  문제 4 :
-   */
+/*
+문제 45 : getTime() 함수 이용하기
+Date객체의 메소드 중 하나인 getTime()은 1970년 1월 1일 0시 0분 0초 이후로부터 지금까지 흐른 시간을 천분의 1초 단위(ms)로 반환합니다.
+
+이를 이용하여 현재 연도를 출력해보세요.
+ */
+
+const ans45 = () => {
+  const now = new Date().getTime();
+  const YEAR = 1000 * 60 * 60 * 24 * 365;
+  console.log(Math.floor(now / YEAR + 1970));
+}
+
+/*
+문제 46 : 각 자리수의 합 2
+1부터 20까지의(20을 포함) 모든 숫자를 일렬로 놓고 모든 자릿수의 총 합을 구하세요. 
+
+예를 들어 10부터 15까지의 모든 숫자를 일렬로 놓으면 101112131415이고 
+각 자리의 숫자를 더하면 21입니다. (1+0+1+1+1+2+1+3+1+4+1+5 = 21)
+ */
+
+const ans46 = () => {
+  let sum = 0;
+  for (let i = 1; i <= 20; i++) {
+    const num = i.toString().split('');
+    sum += num.reduce((prev, digit) => {
+      return prev + +digit;
+    }, 0)
+  }
+  return sum;
+}
+
+/*
+문제 47 : set 자료형의 응용
+const people = {
+  이호준: "01050442903",
+  이호상: "01051442904",
+  이준호: "01050342904",
+  이호준: "01050442903",
+  이준: "01050412904",
+  이호: "01050443904",
+  이호준: "01050442903"
+};
+ */
+
+const people = {
+  이호준: "01050442903",
+  이호상: "01051442904",
+  이준호: "01050342904",
+  이호준: "01050442903",
+  이준: "01050412904",
+  이호: "01050443904",
+  이호준: "01050442903"
+};
+
+const ans47 = () => {
+  const set = new Set(Object.values(people));
+  return set.size;
+}
+
+/*
+문제 48 : 대소문자 바꿔서 출력하기
+문자열이 주어지면 대문자와 소문자를 바꿔서 출력하는 프로그램을 작성하세요.
+ */
+
+const ans48 = (str) => {
+  return str.split('').reduce((prev, ch) => {
+    if (ch === ch.toLowerCase()) return prev + ch.toUpperCase();
+    else return prev + ch.toLowerCase();
+  }, '')
+}
+
+/*
+문제 49 : 최댓값 구하기
+순서가 없는 10개의 숫자가 공백으로 구분되어 주어진다. 주어진 숫자들 중 최댓값을 반환하라.
+ */
+
+const ans49 = (arr) => {
+  return arr.reduce((prev, data) => {
+    if (prev < data) return data;
+    return prev;
+  }, 0);
+}
+
+/*
+문제 50 : 버블정렬 구현하기
+버블정렬은 두 인접한 원소를 검사하여 정렬하는 방법을 말합니다. 시간 복잡도는 느리지만 코드가 단순하기 때문에 자주 사용됩니다.
+아래 코드의 빈 칸을 채워 버블 정렬을 완성해 봅시다.
+ */
+
+function bubble(arr) {
+  let result = arr.slice(); 
+
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = i+1; j <result.length; j++) {
+      if (result[j] > result[j + 1]) {
+         const temp = result[j];
+         result[j] = result[j + 1];
+         result[j + 1] = temp;
+      }
+    }
+  }
+  return result;
+}
+
+const items = prompt('입력해주세요.').split(' ').map((n) => {
+  return parseInt(n, 10);
+});
+
+console.log(bubble(items));
